@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5AA139FD20DE6D78000FC188 /* TDDCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA139F320DE6D77000FC188 /* TDDCalculator.framework */; };
 		5AA13A0220DE6D78000FC188 /* TDDCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA13A0120DE6D78000FC188 /* TDDCalculatorTests.swift */; };
-		5AA13A0420DE6D78000FC188 /* TDDCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA139F620DE6D77000FC188 /* TDDCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AA13A0E20DE6E5E000FC188 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA13A0D20DE6E5E000FC188 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		5AA139F320DE6D77000FC188 /* TDDCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TDDCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AA139F620DE6D77000FC188 /* TDDCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDDCalculator.h; sourceTree = "<group>"; };
 		5AA139F720DE6D78000FC188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AA139FC20DE6D78000FC188 /* TDDCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA13A0120DE6D78000FC188 /* TDDCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDCalculatorTests.swift; sourceTree = "<group>"; };
 		5AA13A0320DE6D78000FC188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA13A0D20DE6E5E000FC188 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 		5AA139F520DE6D77000FC188 /* TDDCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				5AA139F620DE6D77000FC188 /* TDDCalculator.h */,
+				5AA13A0D20DE6E5E000FC188 /* Calculator.swift */,
 				5AA139F720DE6D78000FC188 /* Info.plist */,
 			);
 			path = TDDCalculator;
@@ -93,7 +93,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AA13A0420DE6D78000FC188 /* TDDCalculator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +147,7 @@
 				TargetAttributes = {
 					5AA139F220DE6D77000FC188 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					5AA139FB20DE6D78000FC188 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA13A0E20DE6E5E000FC188 /* Calculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +340,7 @@
 		5AA13A0820DE6D78000FC188 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jazuara.apps.TDDCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +367,7 @@
 		5AA13A0920DE6D78000FC188 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +393,7 @@
 		5AA13A0B20DE6D78000FC188 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BY257TEG4;
 				INFOPLIST_FILE = TDDCalculatorTests/Info.plist;
@@ -407,6 +412,7 @@
 		5AA13A0C20DE6D78000FC188 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4BY257TEG4;
 				INFOPLIST_FILE = TDDCalculatorTests/Info.plist;
